@@ -1,9 +1,9 @@
 import { Typography } from "@material-tailwind/react";
- 
+import LogoImage from "./assets/Logo.png";
 const SITEMAP = [
     {
-        title: "Products",
-        links: ["Templates", "UI Kits", "Icons", "Mockups"],
+        title: "iConsulta",
+        links: [""],
       },
   {
     title: "About Us",

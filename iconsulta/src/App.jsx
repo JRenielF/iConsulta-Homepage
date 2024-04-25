@@ -7,6 +7,7 @@ import Testimonial from './Testimonial';
 import Services from './Sevices';
 import { Footer } from './Footer';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Home />
@@ -16,3 +17,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Footer />
   </React.StrictMode>,
 )
+
+
