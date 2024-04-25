@@ -1,21 +1,21 @@
 import { Typography } from "@material-tailwind/react";
  
 const SITEMAP = [
+    {
+        title: "Products",
+        links: ["Templates", "UI Kits", "Icons", "Mockups"],
+      },
   {
-    title: "Company",
-    links: ["About Us", "Careers", "Our Team", "Projects"],
+    title: "About Us",
+    links: ["Who We Are", "Contact Us", "Privacy Policy", "Terms and Conditions", "FAQ"],
   },
   {
-    title: "Help Center",
-    links: ["Discord", "Twitter", "GitHub", "Contact Us"],
+    title: "Philippine Office",
+    links: ["Unit 104-105, #15 Gold Building, 15 Annapolis St., Greenhills, San Juan City 1045 Philippines"],
   },
   {
-    title: "Resources",
-    links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
-  },
-  {
-    title: "Products",
-    links: ["Templates", "UI Kits", "Icons", "Mockups"],
+    title: "iCanada HQ Business Office",
+    links: ["7181 Yonge Street, Suite 283, Thornhill, Ontario L3T 0C7 Canada"],
   },
 ];
  
@@ -55,7 +55,7 @@ export function Footer() {
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
           >
-            &copy; {currentYear} <a href="https://material-tailwind.com/">Material Tailwind</a>. All
+            &copy; {currentYear} <a href="https://material-tailwind.com/">iCanada FSI</a>. All
             Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
