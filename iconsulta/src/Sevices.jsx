@@ -1,23 +1,44 @@
 const callouts = [
     {
       name: 'iHome',
-      description: 'Work from home accessories',
+      description: 'Discover flexible living with iHome. From cozy apartments to spacious houses, find the perfect temporary home or rental service tailored to your needs.',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-      imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+      imageAlt: '',
       href: '#',
     },
     {
       name: 'iMoveU',
-      description: 'Journals and note-taking',
+      description: 'Relocate seamlessly with iMoveU. Trust our expert movers for efficient relocation services within California.',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-      imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+      imageAlt: '.',
       href: '#',
     },
     {
       name: 'iBoxMo',
-      description: 'Daily commute essentials',
+      description: 'Simplify package deliveries with iBoxMo. Trust us for secure and prompt handling of your packages.',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+      imageAlt: '',
+      href: '#',
+    },
+    {
+      name: 'iLabadaKo',
+      description: 'Ease laundry day stress with iLabadaKo. Our laundry service ensures your clothes are washed, dried, and folded perfectly.',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+      imageAlt: '',
+      href: '#',
+    },
+    {
+      name: 'iLinis',
+      description: 'Keep your living space spotless with iLinis cleaning service.',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
+      imageAlt: '',
+      href: '#',
+    },
+    {
+      name: 'iPasabay',
+      description: 'Save money and reduce your carbon footprint with iPasabay carpooling.',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+      imageAlt: '',
       href: '#',
     },
   ]
@@ -27,9 +48,9 @@ const callouts = [
       <div className="bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Services</h2>
   
-            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-6 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative">
                   <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
