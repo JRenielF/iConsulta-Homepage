@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="bg-white">
-      <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-md">
+      <header className="fixed inset-x-0 top-0 z-50 bg-sky-500 shadow-md">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -117,12 +117,12 @@ export default function Home() {
               iConsulta
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Simplify your journey with iConsulta. As Filipino-Canadians, we empathize with your specific needs and ambitions. Our array of services is tailored to streamline your experience in Canada, whether it's navigating education options, advancing your career, or settling into your new life. From personalized guidance to practical support, we're here to make your transition smoother and your future brighter in the Great White North. Let iConsulta be your partner in simplifying the path to success and fulfillment in Canada!
+           Make your journey easier with iConsulta. As Filipino-Canadians, we understand your unique goals and challenges. 
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-40 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
