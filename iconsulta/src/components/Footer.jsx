@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import LogoImage from "./assets/Logo.png";
+import LogoImage from "/src/assets/Logo.png";
 const SITEMAP = [
     {
       title: <img src={LogoImage} alt="Company Logo" />,
