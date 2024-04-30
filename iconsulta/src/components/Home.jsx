@@ -1,18 +1,6 @@
-import LogoImage from "/src/assets/Logo.png";
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import BackgroundImage from "/src/assets/Background.jpg";
 
-const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Services', href: '#' },
-  { name: 'Contacts', href: '#' },
-]
-
-export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  export default function Home() {
 
   return (
     <div className="bg-cover bg-center h-screen" style={{backgroundImage: `url(${BackgroundImage})`}}>
