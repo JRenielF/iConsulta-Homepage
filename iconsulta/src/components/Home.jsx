@@ -1,18 +1,40 @@
+import React, { useState, useEffect } from 'react';
 import BackgroundImage from "/src/assets/Background.jpg";
 
-  export default function Home() {
+export default function Home() {
+  const [typedText, setTypedText] = useState('');
+  const text = "Make your journey easier with iConsulta. As Filipino-Canadians, we understand your unique goals and challenges.";
+
+  useEffect(() => {
+    const typeText = () => {
+      let index = 0;
+      const typingInterval = setInterval(() => {
+        setTypedText(text.substring(0, index));
+        index++;
+        if (index > text.length) {
+          clearInterval(typingInterval);
+        }
+      }, 50); // Adjust typing speed here
+    };
+
+    typeText();
+
+    // Clean up
+    return () => clearInterval(typeText);
+  }, []);
 
   return (
-    <div className="bg-cover bg-center h-screen" style={{backgroundImage: `url(${BackgroundImage})`}}>
-     <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="bg-cover bg-center h-screen " style={{backgroundImage: `url(${BackgroundImage})`}}>
+      <div className="absolute inset-0 backdrop-blur-sm"></div>
+      <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-20">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              iConsulta
+            <h1 className="text-4xl font-bold tracking-tight text-black-900 sm:text-7xl">
+              ICONSULTA
             </h1>
             <p className="mt-6 text-lg font-semibold leading-8 text-black-900">
-           Make your journey easier with iConsulta. As Filipino-Canadians, we understand your unique goals and challenges. 
+              {typedText}
             </p>
             <div className="mt-40 flex items-center justify-center gap-x-6">
               <a
@@ -43,4 +65,3 @@ import BackgroundImage from "/src/assets/Background.jpg";
     </div>
   )
 }
-
